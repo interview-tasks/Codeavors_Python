@@ -1,0 +1,28 @@
+=== Basic MongoDB PyMongo Driver Tests ===
+
+1. Testing ObjectId:
+   Created ObjectId: 68d39f3f4afeb065fcdbbcdb
+   ObjectId is valid: True
+   ObjectId generation time: 2025-09-24 07:35:27+00:00
+   ✓ ObjectId tests passed
+
+2. Testing BSON encoding/decoding:
+   Original: {'name': 'test', 'value': 42, 'nested': {'array': [1, 2, 3]}}
+   Decoded:  {'name': 'test', 'value': 42, 'nested': {'array': [1, 2, 3]}}
+   Match: True
+   ✓ BSON encoding/decoding tests passed
+
+3. Testing Decimal128:
+   Created Decimal128: 123.456
+   String representation: 123.456
+   ✓ Decimal128 tests passed
+
+=== All basic tests completed successfully\! ===
+
+Summary:
+- ObjectId creation and validation: PASSED
+- BSON encoding/decoding: PASSED
+- Decimal128 support: PASSED
+
+Note: These are basic unit tests that do not require MongoDB server.
+Full integration tests would require a running MongoDB instance.
